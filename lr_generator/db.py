@@ -23,13 +23,24 @@ class Database:
                     CREATE TABLE IF NOT EXISTS {self.table_name} (
                         lr_id VARCHAR(20) PRIMARY KEY,
                         invoice_number VARCHAR(50) NOT NULL,
-                        date DATE NOT NULL,
-                        consignor_name VARCHAR(100) NOT NULL,
-                        consignee_name VARCHAR(100) NOT NULL,
-                        weight DECIMAL(10,2) NOT NULL,
-                        packages INTEGER NOT NULL,
-                        destination VARCHAR(100) NOT NULL,
-                        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+                        receive_date DATE NOT NULL,
+                        time TIME,
+                        brand VARCHAR(100),
+                        party_name VARCHAR(200) NOT NULL,
+                        location VARCHAR(100) NOT NULL,
+                        boxes INTEGER NOT NULL,
+                        transporter VARCHAR(100) NOT NULL,
+                        transit_time DATE,
+                        eway_bill VARCHAR(50),
+                        pin_code INTEGER,
+                        amount DECIMAL(10,2),
+                        weight VARCHAR(20) NOT NULL,
+                        lr_no VARCHAR(50),
+                        remark TEXT,
+                        status VARCHAR(50),
+                        delivery_date DATE,
+                        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                        UNIQUE(invoice_number)
                     )
                 """)
                 conn.commit()
@@ -40,21 +51,49 @@ class Database:
             with conn.cursor() as cur:
                 query = f"""
                     INSERT INTO {self.table_name}
-                    (lr_id, invoice_number, date, consignor_name, consignee_name,
-                     weight, packages, destination)
-                    VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
+                    (lr_id, invoice_number, receive_date, time, brand, party_name,
+                     location, boxes, transporter, transit_time, eway_bill, pin_code,
+                     amount, weight, lr_no, remark, status, delivery_date)
+                    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                    ON CONFLICT (invoice_number) DO UPDATE SET
+                    receive_date = EXCLUDED.receive_date,
+                    time = EXCLUDED.time,
+                    brand = EXCLUDED.brand,
+                    party_name = EXCLUDED.party_name,
+                    location = EXCLUDED.location,
+                    boxes = EXCLUDED.boxes,
+                    transporter = EXCLUDED.transporter,
+                    transit_time = EXCLUDED.transit_time,
+                    eway_bill = EXCLUDED.eway_bill,
+                    pin_code = EXCLUDED.pin_code,
+                    amount = EXCLUDED.amount,
+                    weight = EXCLUDED.weight,
+                    lr_no = EXCLUDED.lr_no,
+                    remark = EXCLUDED.remark,
+                    status = EXCLUDED.status,
+                    delivery_date = EXCLUDED.delivery_date
                 """
                 
                 values = [
                     (
                         record['lr_id'],
                         record['invoice_number'],
-                        record['date'],
-                        record['consignor_name'],
-                        record['consignee_name'],
+                        record['receive_date'],
+                        record.get('time'),
+                        record.get('brand'),
+                        record['party_name'],
+                        record['location'],
+                        record['boxes'],
+                        record['transporter'],
+                        record.get('transit_time'),
+                        record.get('eway_bill'),
+                        record.get('pin_code'),
+                        record.get('amount'),
                         record['weight'],
-                        record['packages'],
-                        record['destination']
+                        record.get('lr_no'),
+                        record.get('remark'),
+                        record.get('status'),
+                        record.get('delivery_date')
                     )
                     for record in records
                 ]

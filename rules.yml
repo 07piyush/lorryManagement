@@ -1,39 +1,64 @@
 validation_rules:
-  required_fields:
+  # Fields required for PDF generation
+  pdf_fields:
     - invoice_number
-    - date
-    - consignor_name
-    - consignee_name
+    - receive_date
+    - party_name
+    - location
+    - boxes
     - weight
-    - packages
-    - destination
+    - transporter
+    - eway_bill
 
   field_types:
     invoice_number: str
-    date: date
-    consignor_name: str
-    consignee_name: str
-    weight: float
-    packages: int
-    destination: str
+    receive_date: date
+    time: time
+    brand: str
+    party_name: str
+    location: str
+    boxes: int
+    transporter: str
+    transit_time: date
+    eway_bill: str
+    pin_code: int
+    amount: float
+    weight: str
+    lr_no: str
+    remark: str
+    status: str
+    delivery_date: date
 
-  # Excel column to LR field mapping
+  # Excel column to database field mapping
   column_mapping:
-    Invoice No: invoice_number
-    Date: date
-    From Party: consignor_name
-    To Party: consignee_name
-    Weight (KG): weight
-    No of Packages: packages
-    Destination City: destination
+    INVOICE  NO: invoice_number
+    RECEIVE DATE: receive_date
+    TIME: time
+    BRAND: brand
+    '                PARTY NAME': party_name
+    '        LOCATION': location
+    'BOX   ': boxes
+    TRANSPORTER: transporter
+    TRANSICT TIME: transit_time
+    'E-WAYBILL ': eway_bill
+    'PIN CODE': pin_code
+    AMT: amount
+    KG: weight
+    'TRNS LR NO.': lr_no
+    REMARK: remark
+    STATUS: status
+    'DELIVERY DATE': delivery_date
 
-  constraints:
-    weight:
-      min: 0.1
-      max: 100000.0
-    packages:
-      min: 1
-      max: 10000
+  # Fields to show on PDF
+  pdf_mapping:
+    invoice_number: INVOICE  NO
+    receive_date: RECEIVE DATE
+    party_name: '                PARTY NAME'
+    location: '        LOCATION'
+    boxes: 'BOX   '
+    weight: KG
+    transporter: TRANSPORTER
+    eway_bill: 'E-WAYBILL '
 
 lr_generation:
   items_per_page: 3
@@ -41,7 +66,7 @@ lr_generation:
   sequence_reset: daily
 
 database:
-  table_name: lr_records
+  table_name: shipment_records
   batch_size: 100
   retry_attempts: 3
   retry_delay_seconds: 5

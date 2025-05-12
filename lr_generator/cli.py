@@ -11,6 +11,7 @@ from .lr_generator import LRGenerator
 from .pdf_generator import PDFGenerator
 from .print_manager import PrintManager
 from .db import Database
+from typing import List, Dict
 
 # Load environment variables
 load_dotenv()
@@ -71,42 +72,46 @@ def process_file(file_path: Path, config: dict, output_dir: Path, branch_code: s
                 timeout_seconds=config['print_settings']['timeout_seconds']
             )
         
-        # Read and process Excel file
-        records = reader.read_excel(file_path)
-        
-        # Validate and generate LR IDs
+        # Process Excel file in chunks
         valid_records = []
-        for record in records:
+        batch_size = config['database']['batch_size']
+        current_batch = []
+        
+        # Read and process Excel file in chunks
+        for record in reader.read_excel(file_path):
             errors = reader.validate_record(record)
             if not errors:
                 record['lr_id'] = lr_gen.generate_lr_id(record)
+                current_batch.append(record)
                 valid_records.append(record)
+                
+                # Process batch if it reaches the batch size
+                if len(current_batch) >= batch_size:
+                    _process_batch(current_batch, db, config)
+                    current_batch = []
             else:
                 click.echo(f"Validation errors for record: {errors}")
+        
+        # Process remaining records in the last batch
+        if current_batch:
+            _process_batch(current_batch, db, config)
         
         if not valid_records:
             click.echo("No valid records found")
             return False
         
-        # Generate PDF
+        # Generate PDF in chunks of items_per_page
+        items_per_page = config['lr_generation']['items_per_page']
         output_path = output_dir / f"lr_batch_{branch_code}_{len(valid_records)}.pdf"
-        pdf_gen.create_lr_document(valid_records, str(output_path))
+        
+        for i in range(0, len(valid_records), items_per_page * 10):  # Process 10 pages at a time
+            batch_records = valid_records[i:i + items_per_page * 10]
+            if i == 0:
+                pdf_gen.create_lr_document(batch_records, str(output_path))
+            else:
+                pdf_gen.append_to_document(batch_records, str(output_path))
+        
         click.echo(f"Generated PDF: {output_path}")
-        
-        # Store in database with retry
-        max_attempts = config['database'].get('retry_attempts', 3)
-        retry_delay = config['database'].get('retry_delay_seconds', 5)
-        
-        for attempt in range(max_attempts):
-            try:
-                db.insert_records(valid_records, config['database']['batch_size'])
-                click.echo("Records stored in database")
-                break
-            except Exception as e:
-                if attempt == max_attempts - 1:
-                    raise
-                click.echo(f"Database error (attempt {attempt + 1}): {str(e)}")
-                time.sleep(retry_delay)
         
         # Try to print if enabled
         if print_manager:
@@ -123,6 +128,22 @@ def process_file(file_path: Path, config: dict, output_dir: Path, branch_code: s
     finally:
         if 'db' in locals():
             db.close()
+
+def _process_batch(batch: List[Dict], db: Database, config: dict):
+    """Process a batch of records with retry logic."""
+    max_attempts = config['database'].get('retry_attempts', 3)
+    retry_delay = config['database'].get('retry_delay_seconds', 5)
+    
+    for attempt in range(max_attempts):
+        try:
+            db.insert_records(batch, config['database']['batch_size'])
+            click.echo(f"Stored {len(batch)} records in database")
+            break
+        except Exception as e:
+            if attempt == max_attempts - 1:
+                raise
+            click.echo(f"Database error (attempt {attempt + 1}): {str(e)}")
+            time.sleep(retry_delay)
 
 @cli.command()
 @click.argument('watch_dir', type=click.Path(exists=True))
