@@ -1,0 +1,62 @@
+# project/.windsurf.rules.yml
+
+style:
+  1: "Follow official style guide for the chosen language/framework (e.g., PEP 8 for Python)"             # turn0search0
+  2: "Use meaningful names for variables, functions, classes, and files"
+  6: "Add comments only where the logic is complex or non-obvious"                                       # turn0search10
+
+design:
+  3: "Keep functions/methods focused on a single responsibility"
+  4: "Apply SOLID principles and relevant design patterns"                                                # turn0search1
+  12: "Use interfaces or abstract classes where needed for flexibility"                                  # turn0search9
+
+config:
+  5: "Avoid hardcoding values; use config files or environment variables"                                # turn0search2
+  22: "Include .env.example and never commit actual secrets"                                              # turn0search2
+
+structure:
+  7: "Use a clean, modular folder structure suitable for the language/framework"
+  8: "Separate business logic, data access, and presentation layers"
+  9: "Place reusable code in common folders like `utils` or `shared`"
+  10: "Break features into small, reusable components or services"
+  11: "Avoid code duplication (DRY principle)"                                                            # turn0search6
+
+documentation:
+  13: "Document all public methods, classes, and modules"
+  14: "Maintain a README.md with project overview, setup, usage, and structure"
+  15: "Add API documentation using Swagger or OpenAPI"                                                   # turn0search4
+
+testing:
+  16: "Write unit tests for all important logic and edge cases"
+  17: "Use a consistent testing framework (e.g., JUnit, PyTest)"
+  18: "Mock external dependencies for isolated testing"
+  19: "Aim for 80% or higher code coverage unless told otherwise"
+  20: "Provide build, test, and deploy scripts"
+
+ci_cd:
+  21: "Use CI workflows like GitHub Actions for automation"                                              # turn0search5
+  38: "Automate all possible steps: setup, install, build, run, test"
+  39: "Avoid asking the user to perform manual steps"
+  40: "If manual action is unavoidable, explain why and how"
+
+security:
+  23: "Sanitize and validate all user inputs"                                                           # turn0search3
+  24: "Do not expose secrets or tokens in logs or code"
+  25: "Use secure practices like HTTPS and authentication if needed"
+
+git:
+  29: "Use Git with a proper .gitignore"                                                                 # turn0search8, turn0search18
+  30: "Follow semantic commit messages (e.g., feat: add login form)"                                     # turn0search7
+  31: "Group changes logically in commits"
+
+agent_behavior:
+  26: "Return only the required code unless asked to explain"
+  27: "Specify the file name, path, and dependencies when generating code"
+  28: "Ask for clarification if a prompt is unclear"
+  32: "Do not repeat generated code unless requested"
+  33: "Use the latest known project context unless reset"
+  34: "Explain only when prompted with explain: or why:"
+  35: "Detect and use existing tool versions from project files (e.g., package.json, pom.xml)"
+  36: "Avoid introducing new versions unless asked"
+  37: "Assume the environment is already set up unless told otherwise"
+  41: "Directly generate or modify necessary files when permitted"

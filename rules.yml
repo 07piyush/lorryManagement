@@ -1,0 +1,59 @@
+validation_rules:
+  required_fields:
+    - invoice_number
+    - date
+    - consignor_name
+    - consignee_name
+    - weight
+    - packages
+    - destination
+
+  field_types:
+    invoice_number: str
+    date: date
+    consignor_name: str
+    consignee_name: str
+    weight: float
+    packages: int
+    destination: str
+
+  # Excel column to LR field mapping
+  column_mapping:
+    Invoice No: invoice_number
+    Date: date
+    From Party: consignor_name
+    To Party: consignee_name
+    Weight (KG): weight
+    No of Packages: packages
+    Destination City: destination
+
+  constraints:
+    weight:
+      min: 0.1
+      max: 100000.0
+    packages:
+      min: 1
+      max: 10000
+
+lr_generation:
+  items_per_page: 3
+  id_pattern: "{branch_code}{YYMMDD}{sequence:04d}"
+  sequence_reset: daily
+
+database:
+  table_name: lr_records
+  batch_size: 100
+  retry_attempts: 3
+  retry_delay_seconds: 5
+
+watch_settings:
+  patterns: ["*.xlsx", "*.xls"]
+  ignore_patterns: ["~$*", "*.tmp"]
+  stabilization_seconds: 5
+  delete_after_processing: true
+
+print_settings:
+  enabled: true
+  printer_name: "Microsoft Print to PDF"  # Default to PDF if no printer
+  copies: 1
+  timeout_seconds: 30
