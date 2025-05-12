@@ -42,12 +42,21 @@ def get_db_connection():
 
 def process_file(file_path: Path, config: dict, output_dir: Path, branch_code: str = "") -> bool:
     """Process a single Excel file and return True if successful."""
+    from .monitoring import ProcessingCheckpoint, ProcessingMonitor, get_progress_bar
+    
+    # Initialize monitoring and checkpointing
+    checkpoint = ProcessingCheckpoint(output_dir / ".checkpoints")
+    monitor = ProcessingMonitor()
+    
     try:
+        # Check for existing checkpoint
+        checkpoint_data = checkpoint.load_progress()
+        start_row = checkpoint_data['last_row'] if checkpoint_data and checkpoint_data['file'] == str(file_path) else 0
+        
         # Initialize components
         reader = ExcelReader(
-            required_fields=config['validation_rules']['required_fields'],
-            field_types=config['validation_rules']['field_types'],
-            column_mapping=config['validation_rules']['column_mapping']
+            config=config['validation_rules'],
+            chunk_size=config['processing']['excel_chunk_size']
         )
         
         lr_gen = LRGenerator(
@@ -55,9 +64,7 @@ def process_file(file_path: Path, config: dict, output_dir: Path, branch_code: s
             branch_code=branch_code
         )
         
-        pdf_gen = PDFGenerator(
-            items_per_page=config['lr_generation']['items_per_page']
-        )
+        pdf_gen = PDFGenerator(config['lr_generation'])
         
         # Initialize database
         db = get_db_connection()
@@ -72,25 +79,48 @@ def process_file(file_path: Path, config: dict, output_dir: Path, branch_code: s
                 timeout_seconds=config['print_settings']['timeout_seconds']
             )
         
+        # Get total rows for progress tracking
+        total_rows = reader.get_total_rows(file_path)
+        progress = monitor.start_processing(str(file_path), total_rows)
+        
         # Process Excel file in chunks
         valid_records = []
-        batch_size = config['database']['batch_size']
+        total_errors = 0
         current_batch = []
+        processed_rows = start_row
         
-        # Read and process Excel file in chunks
-        for record in reader.read_excel(file_path):
-            errors = reader.validate_record(record)
-            if not errors:
-                record['lr_id'] = lr_gen.generate_lr_id(record)
-                current_batch.append(record)
-                valid_records.append(record)
+        with progress:
+            task = progress.add_task("Processing records...", total=total_rows)
+            
+            # Read and process Excel file in chunks
+            for record in reader.read_excel(file_path, start_row=start_row):
+                errors = reader.validate_record(record)
+                if not errors:
+                    record['lr_id'] = lr_gen.generate_lr_id(record)
+                    current_batch.append(record)
+                    valid_records.append(record)
+                    
+                    # Process batch if it reaches the batch size
+                    if len(current_batch) >= config['processing']['db_batch_size']:
+                        _process_batch(current_batch, db, config)
+                        current_batch = []
+                else:
+                    total_errors += 1
+                    click.echo(f"Validation errors for record: {errors}")
                 
-                # Process batch if it reaches the batch size
-                if len(current_batch) >= batch_size:
-                    _process_batch(current_batch, db, config)
-                    current_batch = []
-            else:
-                click.echo(f"Validation errors for record: {errors}")
+                processed_rows += 1
+                progress.update(task, advance=1)
+                
+                # Save checkpoint periodically
+                if processed_rows % config['processing']['checkpoint_interval'] == 0:
+                    checkpoint.save_progress(
+                        str(file_path),
+                        processed_rows,
+                        {
+                            'valid_records': len(valid_records),
+                            'total_errors': total_errors
+                        }
+                    )
         
         # Process remaining records in the last batch
         if current_batch:
@@ -100,26 +130,42 @@ def process_file(file_path: Path, config: dict, output_dir: Path, branch_code: s
             click.echo("No valid records found")
             return False
         
-        # Generate PDF in chunks of items_per_page
-        items_per_page = config['lr_generation']['items_per_page']
-        output_path = output_dir / f"lr_batch_{branch_code}_{len(valid_records)}.pdf"
-        
-        for i in range(0, len(valid_records), items_per_page * 10):  # Process 10 pages at a time
-            batch_records = valid_records[i:i + items_per_page * 10]
-            if i == 0:
-                pdf_gen.create_lr_document(batch_records, str(output_path))
-            else:
-                pdf_gen.append_to_document(batch_records, str(output_path))
+        # Generate PDF with progress bar
+        with get_progress_bar(len(valid_records), "Generating PDF") as progress:
+            task = progress.add_task("Generating...", total=len(valid_records))
+            
+            output_path = output_dir / f"lr_batch_{branch_code}_{len(valid_records)}.pdf"
+            batch_size = config['processing']['pdf_batch_size']
+            
+            for i in range(0, len(valid_records), batch_size):
+                batch_records = valid_records[i:i + batch_size]
+                if i == 0:
+                    pdf_gen.create_lr_document(batch_records, str(output_path))
+                else:
+                    pdf_gen.append_to_document(batch_records, str(output_path))
+                progress.update(task, advance=len(batch_records))
         
         click.echo(f"Generated PDF: {output_path}")
         
         # Try to print if enabled
         if print_manager:
-            if print_manager.print_pdf(output_path):
-                click.echo("PDF sent to printer")
-            else:
-                click.echo("Failed to print PDF")
+            with get_progress_bar(1, "Printing") as progress:
+                task = progress.add_task("Sending to printer...", total=1)
+                if print_manager.print_pdf(output_path):
+                    click.echo("PDF sent to printer")
+                else:
+                    click.echo("Failed to print PDF")
+                progress.update(task, advance=1)
         
+        # Log completion
+        monitor.end_processing(
+            total_processed=processed_rows,
+            total_valid=len(valid_records),
+            total_errors=total_errors
+        )
+        
+        # Clear checkpoint on success
+        checkpoint.clear_checkpoint()
         return True
         
     except Exception as e:

@@ -1,0 +1,921 @@
+2025-05-12 17:39:40.464 IST [2216] LOG:  starting PostgreSQL 17.4 on x86_64-windows, compiled by msvc-19.43.34808, 64-bit
+2025-05-12 17:39:40.468 IST [2216] LOG:  listening on IPv6 address "::1", port 5432
+2025-05-12 17:39:40.468 IST [2216] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-05-12 17:39:40.502 IST [16464] LOG:  database system was shut down at 2025-05-12 17:39:36 IST
+2025-05-12 17:39:40.516 IST [2216] LOG:  database system is ready to accept connections
+2025-05-12 17:39:47.002 IST [2820] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:47.026 IST [18276] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:47.046 IST [2616] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:47.068 IST [19868] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:47.089 IST [6288] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:47.113 IST [18096] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:47.136 IST [15344] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:47.161 IST [17568] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:47.186 IST [8944] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:47.213 IST [19284] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:47.234 IST [10868] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:47.256 IST [16580] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:47.274 IST [12724] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:47.301 IST [20080] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:47.326 IST [2112] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:47.348 IST [19540] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:47.371 IST [14904] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:47.394 IST [12416] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:47.415 IST [18824] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:47.437 IST [9600] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:47.459 IST [18032] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:47.485 IST [2184] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:47.506 IST [1824] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:47.530 IST [4192] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:47.556 IST [12500] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:47.587 IST [4044] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:47.609 IST [17800] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:47.637 IST [6844] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:47.673 IST [5200] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:47.733 IST [17864] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:47.767 IST [8536] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:47.801 IST [7628] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:47.827 IST [18540] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:47.856 IST [19572] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:47.880 IST [17480] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:47.909 IST [10296] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:47.937 IST [19200] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:47.962 IST [364] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:47.986 IST [13392] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:48.011 IST [4984] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:48.033 IST [9896] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:48.062 IST [10532] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:48.086 IST [20300] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:48.107 IST [11536] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:48.127 IST [18876] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:48.151 IST [8864] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:48.172 IST [19100] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:48.194 IST [16036] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:48.215 IST [3556] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:52.058 IST [8204] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:52.085 IST [13440] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:52.106 IST [10092] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:52.124 IST [12844] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:57.041 IST [19588] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:57.063 IST [18304] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:57.086 IST [20468] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:39:57.106 IST [20180] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:40:02.039 IST [8924] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:40:02.066 IST [7272] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:40:02.092 IST [17768] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:40:02.113 IST [7296] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:40:07.048 IST [20340] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:40:07.067 IST [2212] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:40:07.089 IST [7216] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:40:07.109 IST [18584] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:40:12.039 IST [20060] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:40:12.067 IST [5356] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:40:12.090 IST [7252] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:40:12.113 IST [11792] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:40:17.038 IST [18932] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:40:17.065 IST [84] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:40:17.091 IST [17448] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:40:17.119 IST [5116] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:40:22.039 IST [4672] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:40:22.061 IST [6532] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:40:22.083 IST [3576] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:40:22.106 IST [16992] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:40:27.040 IST [17760] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:40:27.069 IST [17232] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:40:27.100 IST [18232] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:40:27.128 IST [8664] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:40:32.042 IST [8632] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:40:32.071 IST [7944] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:40:32.096 IST [19664] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:40:32.130 IST [4696] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:40:37.027 IST [18800] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:40:37.049 IST [10052] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:40:37.074 IST [18588] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:40:37.095 IST [4444] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:40:42.051 IST [8036] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:40:42.073 IST [18276] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:40:42.096 IST [20376] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:40:42.122 IST [19560] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:40:47.032 IST [6424] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:40:47.055 IST [11532] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:40:47.080 IST [11952] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:40:47.101 IST [12404] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:41:21.043 IST [5968] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:41:21.068 IST [8044] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:41:21.099 IST [13840] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:41:21.124 IST [17548] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:42:21.038 IST [18012] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:42:21.062 IST [5732] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:42:21.086 IST [18492] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:42:21.105 IST [11004] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:43:21.063 IST [18260] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:43:21.089 IST [16792] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:43:21.110 IST [11792] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:43:21.131 IST [4488] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:44:21.056 IST [19840] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:44:21.085 IST [12764] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:44:21.108 IST [4444] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:44:21.130 IST [16036] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:44:40.501 IST [448] LOG:  checkpoint starting: time
+2025-05-12 17:45:20.918 IST [19740] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:45:20.946 IST [1384] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:45:20.968 IST [11768] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:45:20.989 IST [19984] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:45:21.877 IST [4620] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:45:21.901 IST [7868] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:45:21.923 IST [20316] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:45:21.947 IST [12648] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:45:24.081 IST [18492] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:45:24.108 IST [17020] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:45:24.135 IST [8228] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:45:24.158 IST [13008] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:45:24.184 IST [13584] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:45:24.203 IST [4060] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:45:24.223 IST [19280] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:45:24.241 IST [13036] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:45:26.156 IST [6044] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:45:26.177 IST [9512] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:45:26.198 IST [11468] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:45:26.221 IST [16604] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:45:26.244 IST [19992] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:45:26.265 IST [10120] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:45:29.104 IST [19448] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:45:29.122 IST [9148] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:45:29.142 IST [18588] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:45:29.162 IST [7380] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:45:34.090 IST [19592] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:45:34.109 IST [19708] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:45:34.131 IST [14396] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:45:34.154 IST [1824] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:45:40.040 IST [13952] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:45:40.061 IST [17728] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:45:40.083 IST [20080] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:45:40.104 IST [3980] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:45:45.033 IST [19796] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:45:45.054 IST [16400] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:45:45.077 IST [19900] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:45:45.097 IST [17572] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:45:50.048 IST [18208] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:45:50.094 IST [2344] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:45:50.125 IST [18680] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:45:50.146 IST [18180] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:45:55.038 IST [18408] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:45:55.065 IST [11860] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:45:55.113 IST [7800] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:45:55.144 IST [20132] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:46:00.039 IST [20336] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:46:00.058 IST [9736] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:46:00.078 IST [20188] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:46:00.097 IST [8936] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:46:04.748 IST [5484] ERROR:  invalid input syntax for type timestamp: "NaT" at character 518
+2025-05-12 17:46:04.748 IST [5484] STATEMENT:  
+	                    INSERT INTO lr_records
+	                    (lr_id, invoice_number, receive_date, time, brand, party_name,
+	                     location, boxes, transporter, transit_time, eway_bill, pin_code,
+	                     amount, weight, lr_no, remark, status, delivery_date)
+	                    VALUES ('BC2505120001', '7086275757', '2025-04-23'::date, '14:00:00'::time, 'abcd', 'MEDICAL & GENERAL TRADERS', 'JABALPUR', 1, 'BONEYCARGO', '2025-04-25'::date, '231948285318', 1234, 9592, '8KG', '', '', '', 'NaT'::timestamp)
+	                    ON CONFLICT (invoice_number) DO UPDATE SET
+	                    receive_date = EXCLUDED.receive_date,
+	                    time = EXCLUDED.time,
+	                    brand = EXCLUDED.brand,
+	                    party_name = EXCLUDED.party_name,
+	                    location = EXCLUDED.location,
+	                    boxes = EXCLUDED.boxes,
+	                    transporter = EXCLUDED.transporter,
+	                    transit_time = EXCLUDED.transit_time,
+	                    eway_bill = EXCLUDED.eway_bill,
+	                    pin_code = EXCLUDED.pin_code,
+	                    amount = EXCLUDED.amount,
+	                    weight = EXCLUDED.weight,
+	                    lr_no = EXCLUDED.lr_no,
+	                    remark = EXCLUDED.remark,
+	                    status = EXCLUDED.status,
+	                    delivery_date = EXCLUDED.delivery_date
+	                ;
+	                    INSERT INTO lr_records
+	                    (lr_id, invoice_number, receive_date, time, brand, party_name,
+	                     location, boxes, transporter, transit_time, eway_bill, pin_code,
+	                     amount, weight, lr_no, remark, status, delivery_date)
+	                    VALUES ('BC2505120002', '7086275755', '2025-04-23'::date, '14:00:00'::time, 'abcd', 'AGRAWAL MEDICO', 'BHOPAL', 2, 'BONEYCARGO', '2025-04-25'::date, '291948284850', 462001, 24754, '25KG', '', '', '', 'NaT'::timestamp)
+	                    ON CONFLICT (invoice_number) DO UPDATE SET
+	                    receive_date = EXCLUDED.receive_date,
+	                    time = EXCLUDED.time,
+	                    brand = EXCLUDED.brand,
+	                    party_name = EXCLUDED.party_name,
+	                    location = EXCLUDED.location,
+	                    boxes = EXCLUDED.boxes,
+	                    transporter = EXCLUDED.transporter,
+	                    transit_time = EXCLUDED.transit_time,
+	                    eway_bill = EXCLUDED.eway_bill,
+	                    pin_code = EXCLUDED.pin_code,
+	                    amount = EXCLUDED.amount,
+	                    weight = EXCLUDED.weight,
+	                    lr_no = EXCLUDED.lr_no,
+	                    remark = EXCLUDED.remark,
+	                    status = EXCLUDED.status,
+	                    delivery_date = EXCLUDED.delivery_date
+	                ;
+	                    INSERT INTO lr_records
+	                    (lr_id, invoice_number, receive_date, time, brand, party_name,
+	                     location, boxes, transporter, transit_time, eway_bill, pin_code,
+	                     amount, weight, lr_no, remark, status, delivery_date)
+	                    VALUES ('BC2505120003', '7086275759', '2025-04-23'::date, '14:00:00'::time, 'abcd', 'K.MEDICO DISYTRIBUTORS', 'JABALPUR', 1, 'BONEYCARGO', '2025-04-25'::date, '251948284944', 482002, 6146, '11KG', '', '', '', 'NaT'::timestamp)
+	                    ON CONFLICT (invoice_number) DO UPDATE SET
+	                    receive_date = EXCLUDED.receive_date,
+	                    time = EXCLUDED.time,
+	                    brand = EXCLUDED.brand,
+	                    party_name = EXCLUDED.party_name,
+	                    location = EXCLUDED.location,
+	                    boxes = EXCLUDED.boxes,
+	                    transporter = EXCLUDED.transporter,
+	                    transit_time = EXCLUDED.transit_time,
+	                    eway_bill = EXCLUDED.eway_bill,
+	                    pin_code = EXCLUDED.pin_code,
+	                    amount = EXCLUDED.amount,
+	                    weight = EXCLUDED.weight,
+	                    lr_no = EXCLUDED.lr_no,
+	                    remark = EXCLUDED.remark,
+	                    status = EXCLUDED.status,
+	                    delivery_date = EXCLUDED.delivery_date
+	                ;
+	                    INSERT INTO lr_records
+	                    (lr_id, invoice_number, receive_date, time, brand, party_name,
+	                     location, boxes, transporter, transit_time, eway_bill, pin_code,
+	                     amount, weight, lr_no, remark, status, delivery_date)
+	                    VALUES ('BC2505120004', '7106124805', '2025-04-23'::date, '14:00:00'::time, 'abcd', 'CAPITAL MEDICAL AGENCIES', 'BHOPAL', 1, 'BONEYCARGO', '2025-04-25'::date, '251948285273', 462001, 2182, '3KG', '', '', '', 'NaT'::timestamp)
+	                    ON CONFLICT (invoice_number) DO UPDATE SET
+	                    receive_date = EXCLUDED.receive_date,
+	                    time = EXCLUDED.time,
+	                    brand = EXCLUDED.brand,
+	                    party_name = EXCLUDED.party_name,
+	                    location = EXCLUDED.location,
+	                    boxes = EXCLUDED.boxes,
+	                    transporter = EXCLUDED.transporter,
+	                    transit_time = EXCLUDED.transit_time,
+	                    eway_bill = EXCLUDED.eway_bill,
+	                    pin_code = EXCLUDED.pin_code,
+	                    amount = EXCLUDED.amount,
+	                    weight = EXCLUDED.weight,
+	                    lr_no = EXCLUDED.lr_no,
+	                    remark = EXCLUDED.remark,
+	                    status = EXCLUDED.status,
+	                    delivery_date = EXCLUDED.delivery_date
+	                ;
+	                    INSERT INTO lr_records
+	                    (lr_id, invoice_number, receive_date, time, brand, party_name,
+	                     location, boxes, transporter, transit_time, eway_bill, pin_code,
+	                     amount, weight, lr_no, remark, status, delivery_date)
+	                    VALUES ('BC2505120005', '7086275762', '2025-04-23'::date, '14:00:00'::time, 'abcd', 'CAPITAL MEDICAL AGENCIES', 'BHOPAL', 1, 'BONEYCARGO', '2025-04-25'::date, '251948285257', 462001, 10886, '11KG', '', '', '', 'NaT'::timestamp)
+	                    ON CONFLICT (invoice_number) DO UPDATE SET
+	                    receive_date = EXCLUDED.receive_date,
+	                    time = EXCLUDED.time,
+	                    brand = EXCLUDED.brand,
+	                    party_name = EXCLUDED.party_name,
+	                    location = EXCLUDED.location,
+	                    boxes = EXCLUDED.boxes,
+	                    transporter = EXCLUDED.transporter,
+	                    transit_time = EXCLUDED.transit_time,
+	                    eway_bill = EXCLUDED.eway_bill,
+	                    pin_code = EXCLUDED.pin_code,
+	                    amount = EXCLUDED.amount,
+	                    weight = EXCLUDED.weight,
+	                    lr_no = EXCLUDED.lr_no,
+	                    remark = EXCLUDED.remark,
+	                    status = EXCLUDED.status,
+	                    delivery_date = EXCLUDED.delivery_date
+	                ;
+	                    INSERT INTO lr_records
+	                    (lr_id, invoice_number, receive_date, time, brand, party_name,
+	                     location, boxes, transporter, transit_time, eway_bill, pin_code,
+	                     amount, weight, lr_no, remark, status, delivery_date)
+	                    VALUES ('BC2505120006', '7086275761', '2025-04-23'::date, '14:00:00'::time, 'abcd', 'DRUG HOUSE', 'BHOPAL', 2, 'BONEYCARGO', '2025-04-25'::date, '241948284983', 462001, 9822, '13KG', '', '', '', 'NaT'::timestamp)
+	                    ON CONFLICT (invoice_number) DO UPDATE SET
+	                    receive_date = EXCLUDED.receive_date,
+	                    time = EXCLUDED.time,
+	                    brand = EXCLUDED.brand,
+	                    party_name = EXCLUDED.party_name,
+	                    location = EXCLUDED.location,
+	                    boxes = EXCLUDED.boxes,
+	                    transporter = EXCLUDED.transporter,
+	                    transit_time = EXCLUDED.transit_time,
+	                    eway_bill = EXCLUDED.eway_bill,
+	                    pin_code = EXCLUDED.pin_code,
+	                    amount = EXCLUDED.amount,
+	                    weight = EXCLUDED.weight,
+	                    lr_no = EXCLUDED.lr_no,
+	                    remark = EXCLUDED.remark,
+	                    status = EXCLUDED.status,
+	                    delivery_date = EXCLUDED.delivery_date
+	                ;
+	                    INSERT INTO lr_records
+	                    (lr_id, invoice_number, receive_date, time, brand, party_name,
+	                     location, boxes, transporter, transit_time, eway_bill, pin_code,
+	                     amount, weight, lr_no, remark, status, delivery_date)
+	                    VALUES ('BC2505120007', '7086275753', '2025-04-23'::date, '14:00:00'::time, 'abcd', 'YOGESH AGENCIES', 'CHHINDWARA', 1, 'BONEYCARGO', '2025-04-25'::date, '261948284806', 480001, 6447, '3KG', '', '', '', 'NaT'::timestamp)
+	                    ON CONFLICT (invoice_number) DO UPDATE SET
+	                    receive_date = EXCLUDED.receive_date,
+	                    time = EXCLUDED.time,
+	                    brand = EXCLUDED.brand,
+	                    party_name = EXCLUDED.party_name,
+	                    location = EXCLUDED.location,
+	                    boxes = EXCLUDED.boxes,
+	                    transporter = EXCLUDED.transporter,
+	                    transit_time = EXCLUDED.transit_time,
+	                    eway_bill = EXCLUDED.eway_bill,
+	                    pin_code = EXCLUDED.pin_code,
+	                    amount = EXCLUDED.amount,
+	                    weight = EXCLUDED.weight,
+	                    lr_no = EXCLUDED.lr_no,
+	                    remark = EXCLUDED.remark,
+	                    status = EXCLUDED.status,
+	                    delivery_date = EXCLUDED.delivery_date
+	                ;
+	                    INSERT INTO lr_records
+	                    (lr_id, invoice_number, receive_date, time, brand, party_name,
+	                     location, boxes, transporter, transit_time, eway_bill, pin_code,
+	                     amount, weight, lr_no, remark, status, delivery_date)
+	                    VALUES ('BC2505120008', '7086275752', '2025-04-23'::date, '14:00:00'::time, 'abcd', 'G M MEDICAL AGENCIES', 'CHHINDWARA', 1, 'BONEYCARGO', '2025-04-25'::date, '211948284786', 480001, 2450, '3KG', '', '', '', 'NaT'::timestamp)
+	                    ON CONFLICT (invoice_number) DO UPDATE SET
+	                    receive_date = EXCLUDED.receive_date,
+	                    time = EXCLUDED.time,
+	                    brand = EXCLUDED.brand,
+	                    party_name = EXCLUDED.party_name,
+	                    location = EXCLUDED.location,
+	                    boxes = EXCLUDED.boxes,
+	                    transporter = EXCLUDED.transporter,
+	                    transit_time = EXCLUDED.transit_time,
+	                    eway_bill = EXCLUDED.eway_bill,
+	                    pin_code = EXCLUDED.pin_code,
+	                    amount = EXCLUDED.amount,
+	                    weight = EXCLUDED.weight,
+	                    lr_no = EXCLUDED.lr_no,
+	                    remark = EXCLUDED.remark,
+	                    status = EXCLUDED.status,
+	                    delivery_date = EXCLUDED.delivery_date
+	                ;
+	                    INSERT INTO lr_records
+	                    (lr_id, invoice_number, receive_date, time, brand, party_name,
+	                     location, boxes, transporter, transit_time, eway_bill, pin_code,
+	                     amount, weight, lr_no, remark, status, delivery_date)
+	                    VALUES ('BC2505120009', '7086275749', '2025-04-23'::date, '14:00:00'::time, 'abcd', 'RAMACHEM', 'DAMOH', 1, 'BONEYCARGO', '2025-04-25'::date, '261948282248', 470661, 3197, '6KG', '', '', '', 'NaT'::timestamp)
+	                    ON CONFLICT (invoice_number) DO UPDATE SET
+	                    receive_date = EXCLUDED.receive_date,
+	                    time = EXCLUDED.time,
+	                    brand = EXCLUDED.brand,
+	                    party_name = EXCLUDED.party_name,
+	                    location = EXCLUDED.location,
+	                    boxes = EXCLUDED.boxes,
+	                    transporter = EXCLUDED.transporter,
+	                    transit_time = EXCLUDED.transit_time,
+	                    eway_bill = EXCLUDED.eway_bill,
+	                    pin_code = EXCLUDED.pin_code,
+	                    amount = EXCLUDED.amount,
+	                    weight = EXCLUDED.weight,
+	                    lr_no = EXCLUDED.lr_no,
+	                    remark = EXCLUDED.remark,
+	                    status = EXCLUDED.status,
+	                    delivery_date = EXCLUDED.delivery_date
+	                
+2025-05-12 17:46:05.040 IST [16688] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:46:05.062 IST [2212] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:46:05.087 IST [20464] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:46:05.106 IST [17204] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:46:09.751 IST [5484] ERROR:  invalid input syntax for type timestamp: "NaT" at character 518
+2025-05-12 17:46:09.751 IST [5484] STATEMENT:  
+	                    INSERT INTO lr_records
+	                    (lr_id, invoice_number, receive_date, time, brand, party_name,
+	                     location, boxes, transporter, transit_time, eway_bill, pin_code,
+	                     amount, weight, lr_no, remark, status, delivery_date)
+	                    VALUES ('BC2505120001', '7086275757', '2025-04-23'::date, '14:00:00'::time, 'abcd', 'MEDICAL & GENERAL TRADERS', 'JABALPUR', 1, 'BONEYCARGO', '2025-04-25'::date, '231948285318', 1234, 9592, '8KG', '', '', '', 'NaT'::timestamp)
+	                    ON CONFLICT (invoice_number) DO UPDATE SET
+	                    receive_date = EXCLUDED.receive_date,
+	                    time = EXCLUDED.time,
+	                    brand = EXCLUDED.brand,
+	                    party_name = EXCLUDED.party_name,
+	                    location = EXCLUDED.location,
+	                    boxes = EXCLUDED.boxes,
+	                    transporter = EXCLUDED.transporter,
+	                    transit_time = EXCLUDED.transit_time,
+	                    eway_bill = EXCLUDED.eway_bill,
+	                    pin_code = EXCLUDED.pin_code,
+	                    amount = EXCLUDED.amount,
+	                    weight = EXCLUDED.weight,
+	                    lr_no = EXCLUDED.lr_no,
+	                    remark = EXCLUDED.remark,
+	                    status = EXCLUDED.status,
+	                    delivery_date = EXCLUDED.delivery_date
+	                ;
+	                    INSERT INTO lr_records
+	                    (lr_id, invoice_number, receive_date, time, brand, party_name,
+	                     location, boxes, transporter, transit_time, eway_bill, pin_code,
+	                     amount, weight, lr_no, remark, status, delivery_date)
+	                    VALUES ('BC2505120002', '7086275755', '2025-04-23'::date, '14:00:00'::time, 'abcd', 'AGRAWAL MEDICO', 'BHOPAL', 2, 'BONEYCARGO', '2025-04-25'::date, '291948284850', 462001, 24754, '25KG', '', '', '', 'NaT'::timestamp)
+	                    ON CONFLICT (invoice_number) DO UPDATE SET
+	                    receive_date = EXCLUDED.receive_date,
+	                    time = EXCLUDED.time,
+	                    brand = EXCLUDED.brand,
+	                    party_name = EXCLUDED.party_name,
+	                    location = EXCLUDED.location,
+	                    boxes = EXCLUDED.boxes,
+	                    transporter = EXCLUDED.transporter,
+	                    transit_time = EXCLUDED.transit_time,
+	                    eway_bill = EXCLUDED.eway_bill,
+	                    pin_code = EXCLUDED.pin_code,
+	                    amount = EXCLUDED.amount,
+	                    weight = EXCLUDED.weight,
+	                    lr_no = EXCLUDED.lr_no,
+	                    remark = EXCLUDED.remark,
+	                    status = EXCLUDED.status,
+	                    delivery_date = EXCLUDED.delivery_date
+	                ;
+	                    INSERT INTO lr_records
+	                    (lr_id, invoice_number, receive_date, time, brand, party_name,
+	                     location, boxes, transporter, transit_time, eway_bill, pin_code,
+	                     amount, weight, lr_no, remark, status, delivery_date)
+	                    VALUES ('BC2505120003', '7086275759', '2025-04-23'::date, '14:00:00'::time, 'abcd', 'K.MEDICO DISYTRIBUTORS', 'JABALPUR', 1, 'BONEYCARGO', '2025-04-25'::date, '251948284944', 482002, 6146, '11KG', '', '', '', 'NaT'::timestamp)
+	                    ON CONFLICT (invoice_number) DO UPDATE SET
+	                    receive_date = EXCLUDED.receive_date,
+	                    time = EXCLUDED.time,
+	                    brand = EXCLUDED.brand,
+	                    party_name = EXCLUDED.party_name,
+	                    location = EXCLUDED.location,
+	                    boxes = EXCLUDED.boxes,
+	                    transporter = EXCLUDED.transporter,
+	                    transit_time = EXCLUDED.transit_time,
+	                    eway_bill = EXCLUDED.eway_bill,
+	                    pin_code = EXCLUDED.pin_code,
+	                    amount = EXCLUDED.amount,
+	                    weight = EXCLUDED.weight,
+	                    lr_no = EXCLUDED.lr_no,
+	                    remark = EXCLUDED.remark,
+	                    status = EXCLUDED.status,
+	                    delivery_date = EXCLUDED.delivery_date
+	                ;
+	                    INSERT INTO lr_records
+	                    (lr_id, invoice_number, receive_date, time, brand, party_name,
+	                     location, boxes, transporter, transit_time, eway_bill, pin_code,
+	                     amount, weight, lr_no, remark, status, delivery_date)
+	                    VALUES ('BC2505120004', '7106124805', '2025-04-23'::date, '14:00:00'::time, 'abcd', 'CAPITAL MEDICAL AGENCIES', 'BHOPAL', 1, 'BONEYCARGO', '2025-04-25'::date, '251948285273', 462001, 2182, '3KG', '', '', '', 'NaT'::timestamp)
+	                    ON CONFLICT (invoice_number) DO UPDATE SET
+	                    receive_date = EXCLUDED.receive_date,
+	                    time = EXCLUDED.time,
+	                    brand = EXCLUDED.brand,
+	                    party_name = EXCLUDED.party_name,
+	                    location = EXCLUDED.location,
+	                    boxes = EXCLUDED.boxes,
+	                    transporter = EXCLUDED.transporter,
+	                    transit_time = EXCLUDED.transit_time,
+	                    eway_bill = EXCLUDED.eway_bill,
+	                    pin_code = EXCLUDED.pin_code,
+	                    amount = EXCLUDED.amount,
+	                    weight = EXCLUDED.weight,
+	                    lr_no = EXCLUDED.lr_no,
+	                    remark = EXCLUDED.remark,
+	                    status = EXCLUDED.status,
+	                    delivery_date = EXCLUDED.delivery_date
+	                ;
+	                    INSERT INTO lr_records
+	                    (lr_id, invoice_number, receive_date, time, brand, party_name,
+	                     location, boxes, transporter, transit_time, eway_bill, pin_code,
+	                     amount, weight, lr_no, remark, status, delivery_date)
+	                    VALUES ('BC2505120005', '7086275762', '2025-04-23'::date, '14:00:00'::time, 'abcd', 'CAPITAL MEDICAL AGENCIES', 'BHOPAL', 1, 'BONEYCARGO', '2025-04-25'::date, '251948285257', 462001, 10886, '11KG', '', '', '', 'NaT'::timestamp)
+	                    ON CONFLICT (invoice_number) DO UPDATE SET
+	                    receive_date = EXCLUDED.receive_date,
+	                    time = EXCLUDED.time,
+	                    brand = EXCLUDED.brand,
+	                    party_name = EXCLUDED.party_name,
+	                    location = EXCLUDED.location,
+	                    boxes = EXCLUDED.boxes,
+	                    transporter = EXCLUDED.transporter,
+	                    transit_time = EXCLUDED.transit_time,
+	                    eway_bill = EXCLUDED.eway_bill,
+	                    pin_code = EXCLUDED.pin_code,
+	                    amount = EXCLUDED.amount,
+	                    weight = EXCLUDED.weight,
+	                    lr_no = EXCLUDED.lr_no,
+	                    remark = EXCLUDED.remark,
+	                    status = EXCLUDED.status,
+	                    delivery_date = EXCLUDED.delivery_date
+	                ;
+	                    INSERT INTO lr_records
+	                    (lr_id, invoice_number, receive_date, time, brand, party_name,
+	                     location, boxes, transporter, transit_time, eway_bill, pin_code,
+	                     amount, weight, lr_no, remark, status, delivery_date)
+	                    VALUES ('BC2505120006', '7086275761', '2025-04-23'::date, '14:00:00'::time, 'abcd', 'DRUG HOUSE', 'BHOPAL', 2, 'BONEYCARGO', '2025-04-25'::date, '241948284983', 462001, 9822, '13KG', '', '', '', 'NaT'::timestamp)
+	                    ON CONFLICT (invoice_number) DO UPDATE SET
+	                    receive_date = EXCLUDED.receive_date,
+	                    time = EXCLUDED.time,
+	                    brand = EXCLUDED.brand,
+	                    party_name = EXCLUDED.party_name,
+	                    location = EXCLUDED.location,
+	                    boxes = EXCLUDED.boxes,
+	                    transporter = EXCLUDED.transporter,
+	                    transit_time = EXCLUDED.transit_time,
+	                    eway_bill = EXCLUDED.eway_bill,
+	                    pin_code = EXCLUDED.pin_code,
+	                    amount = EXCLUDED.amount,
+	                    weight = EXCLUDED.weight,
+	                    lr_no = EXCLUDED.lr_no,
+	                    remark = EXCLUDED.remark,
+	                    status = EXCLUDED.status,
+	                    delivery_date = EXCLUDED.delivery_date
+	                ;
+	                    INSERT INTO lr_records
+	                    (lr_id, invoice_number, receive_date, time, brand, party_name,
+	                     location, boxes, transporter, transit_time, eway_bill, pin_code,
+	                     amount, weight, lr_no, remark, status, delivery_date)
+	                    VALUES ('BC2505120007', '7086275753', '2025-04-23'::date, '14:00:00'::time, 'abcd', 'YOGESH AGENCIES', 'CHHINDWARA', 1, 'BONEYCARGO', '2025-04-25'::date, '261948284806', 480001, 6447, '3KG', '', '', '', 'NaT'::timestamp)
+	                    ON CONFLICT (invoice_number) DO UPDATE SET
+	                    receive_date = EXCLUDED.receive_date,
+	                    time = EXCLUDED.time,
+	                    brand = EXCLUDED.brand,
+	                    party_name = EXCLUDED.party_name,
+	                    location = EXCLUDED.location,
+	                    boxes = EXCLUDED.boxes,
+	                    transporter = EXCLUDED.transporter,
+	                    transit_time = EXCLUDED.transit_time,
+	                    eway_bill = EXCLUDED.eway_bill,
+	                    pin_code = EXCLUDED.pin_code,
+	                    amount = EXCLUDED.amount,
+	                    weight = EXCLUDED.weight,
+	                    lr_no = EXCLUDED.lr_no,
+	                    remark = EXCLUDED.remark,
+	                    status = EXCLUDED.status,
+	                    delivery_date = EXCLUDED.delivery_date
+	                ;
+	                    INSERT INTO lr_records
+	                    (lr_id, invoice_number, receive_date, time, brand, party_name,
+	                     location, boxes, transporter, transit_time, eway_bill, pin_code,
+	                     amount, weight, lr_no, remark, status, delivery_date)
+	                    VALUES ('BC2505120008', '7086275752', '2025-04-23'::date, '14:00:00'::time, 'abcd', 'G M MEDICAL AGENCIES', 'CHHINDWARA', 1, 'BONEYCARGO', '2025-04-25'::date, '211948284786', 480001, 2450, '3KG', '', '', '', 'NaT'::timestamp)
+	                    ON CONFLICT (invoice_number) DO UPDATE SET
+	                    receive_date = EXCLUDED.receive_date,
+	                    time = EXCLUDED.time,
+	                    brand = EXCLUDED.brand,
+	                    party_name = EXCLUDED.party_name,
+	                    location = EXCLUDED.location,
+	                    boxes = EXCLUDED.boxes,
+	                    transporter = EXCLUDED.transporter,
+	                    transit_time = EXCLUDED.transit_time,
+	                    eway_bill = EXCLUDED.eway_bill,
+	                    pin_code = EXCLUDED.pin_code,
+	                    amount = EXCLUDED.amount,
+	                    weight = EXCLUDED.weight,
+	                    lr_no = EXCLUDED.lr_no,
+	                    remark = EXCLUDED.remark,
+	                    status = EXCLUDED.status,
+	                    delivery_date = EXCLUDED.delivery_date
+	                ;
+	                    INSERT INTO lr_records
+	                    (lr_id, invoice_number, receive_date, time, brand, party_name,
+	                     location, boxes, transporter, transit_time, eway_bill, pin_code,
+	                     amount, weight, lr_no, remark, status, delivery_date)
+	                    VALUES ('BC2505120009', '7086275749', '2025-04-23'::date, '14:00:00'::time, 'abcd', 'RAMACHEM', 'DAMOH', 1, 'BONEYCARGO', '2025-04-25'::date, '261948282248', 470661, 3197, '6KG', '', '', '', 'NaT'::timestamp)
+	                    ON CONFLICT (invoice_number) DO UPDATE SET
+	                    receive_date = EXCLUDED.receive_date,
+	                    time = EXCLUDED.time,
+	                    brand = EXCLUDED.brand,
+	                    party_name = EXCLUDED.party_name,
+	                    location = EXCLUDED.location,
+	                    boxes = EXCLUDED.boxes,
+	                    transporter = EXCLUDED.transporter,
+	                    transit_time = EXCLUDED.transit_time,
+	                    eway_bill = EXCLUDED.eway_bill,
+	                    pin_code = EXCLUDED.pin_code,
+	                    amount = EXCLUDED.amount,
+	                    weight = EXCLUDED.weight,
+	                    lr_no = EXCLUDED.lr_no,
+	                    remark = EXCLUDED.remark,
+	                    status = EXCLUDED.status,
+	                    delivery_date = EXCLUDED.delivery_date
+	                
+2025-05-12 17:46:10.043 IST [18096] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:46:10.067 IST [2408] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:46:10.089 IST [3904] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:46:10.108 IST [644] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:46:14.753 IST [5484] ERROR:  invalid input syntax for type timestamp: "NaT" at character 518
+2025-05-12 17:46:14.753 IST [5484] STATEMENT:  
+	                    INSERT INTO lr_records
+	                    (lr_id, invoice_number, receive_date, time, brand, party_name,
+	                     location, boxes, transporter, transit_time, eway_bill, pin_code,
+	                     amount, weight, lr_no, remark, status, delivery_date)
+	                    VALUES ('BC2505120001', '7086275757', '2025-04-23'::date, '14:00:00'::time, 'abcd', 'MEDICAL & GENERAL TRADERS', 'JABALPUR', 1, 'BONEYCARGO', '2025-04-25'::date, '231948285318', 1234, 9592, '8KG', '', '', '', 'NaT'::timestamp)
+	                    ON CONFLICT (invoice_number) DO UPDATE SET
+	                    receive_date = EXCLUDED.receive_date,
+	                    time = EXCLUDED.time,
+	                    brand = EXCLUDED.brand,
+	                    party_name = EXCLUDED.party_name,
+	                    location = EXCLUDED.location,
+	                    boxes = EXCLUDED.boxes,
+	                    transporter = EXCLUDED.transporter,
+	                    transit_time = EXCLUDED.transit_time,
+	                    eway_bill = EXCLUDED.eway_bill,
+	                    pin_code = EXCLUDED.pin_code,
+	                    amount = EXCLUDED.amount,
+	                    weight = EXCLUDED.weight,
+	                    lr_no = EXCLUDED.lr_no,
+	                    remark = EXCLUDED.remark,
+	                    status = EXCLUDED.status,
+	                    delivery_date = EXCLUDED.delivery_date
+	                ;
+	                    INSERT INTO lr_records
+	                    (lr_id, invoice_number, receive_date, time, brand, party_name,
+	                     location, boxes, transporter, transit_time, eway_bill, pin_code,
+	                     amount, weight, lr_no, remark, status, delivery_date)
+	                    VALUES ('BC2505120002', '7086275755', '2025-04-23'::date, '14:00:00'::time, 'abcd', 'AGRAWAL MEDICO', 'BHOPAL', 2, 'BONEYCARGO', '2025-04-25'::date, '291948284850', 462001, 24754, '25KG', '', '', '', 'NaT'::timestamp)
+	                    ON CONFLICT (invoice_number) DO UPDATE SET
+	                    receive_date = EXCLUDED.receive_date,
+	                    time = EXCLUDED.time,
+	                    brand = EXCLUDED.brand,
+	                    party_name = EXCLUDED.party_name,
+	                    location = EXCLUDED.location,
+	                    boxes = EXCLUDED.boxes,
+	                    transporter = EXCLUDED.transporter,
+	                    transit_time = EXCLUDED.transit_time,
+	                    eway_bill = EXCLUDED.eway_bill,
+	                    pin_code = EXCLUDED.pin_code,
+	                    amount = EXCLUDED.amount,
+	                    weight = EXCLUDED.weight,
+	                    lr_no = EXCLUDED.lr_no,
+	                    remark = EXCLUDED.remark,
+	                    status = EXCLUDED.status,
+	                    delivery_date = EXCLUDED.delivery_date
+	                ;
+	                    INSERT INTO lr_records
+	                    (lr_id, invoice_number, receive_date, time, brand, party_name,
+	                     location, boxes, transporter, transit_time, eway_bill, pin_code,
+	                     amount, weight, lr_no, remark, status, delivery_date)
+	                    VALUES ('BC2505120003', '7086275759', '2025-04-23'::date, '14:00:00'::time, 'abcd', 'K.MEDICO DISYTRIBUTORS', 'JABALPUR', 1, 'BONEYCARGO', '2025-04-25'::date, '251948284944', 482002, 6146, '11KG', '', '', '', 'NaT'::timestamp)
+	                    ON CONFLICT (invoice_number) DO UPDATE SET
+	                    receive_date = EXCLUDED.receive_date,
+	                    time = EXCLUDED.time,
+	                    brand = EXCLUDED.brand,
+	                    party_name = EXCLUDED.party_name,
+	                    location = EXCLUDED.location,
+	                    boxes = EXCLUDED.boxes,
+	                    transporter = EXCLUDED.transporter,
+	                    transit_time = EXCLUDED.transit_time,
+	                    eway_bill = EXCLUDED.eway_bill,
+	                    pin_code = EXCLUDED.pin_code,
+	                    amount = EXCLUDED.amount,
+	                    weight = EXCLUDED.weight,
+	                    lr_no = EXCLUDED.lr_no,
+	                    remark = EXCLUDED.remark,
+	                    status = EXCLUDED.status,
+	                    delivery_date = EXCLUDED.delivery_date
+	                ;
+	                    INSERT INTO lr_records
+	                    (lr_id, invoice_number, receive_date, time, brand, party_name,
+	                     location, boxes, transporter, transit_time, eway_bill, pin_code,
+	                     amount, weight, lr_no, remark, status, delivery_date)
+	                    VALUES ('BC2505120004', '7106124805', '2025-04-23'::date, '14:00:00'::time, 'abcd', 'CAPITAL MEDICAL AGENCIES', 'BHOPAL', 1, 'BONEYCARGO', '2025-04-25'::date, '251948285273', 462001, 2182, '3KG', '', '', '', 'NaT'::timestamp)
+	                    ON CONFLICT (invoice_number) DO UPDATE SET
+	                    receive_date = EXCLUDED.receive_date,
+	                    time = EXCLUDED.time,
+	                    brand = EXCLUDED.brand,
+	                    party_name = EXCLUDED.party_name,
+	                    location = EXCLUDED.location,
+	                    boxes = EXCLUDED.boxes,
+	                    transporter = EXCLUDED.transporter,
+	                    transit_time = EXCLUDED.transit_time,
+	                    eway_bill = EXCLUDED.eway_bill,
+	                    pin_code = EXCLUDED.pin_code,
+	                    amount = EXCLUDED.amount,
+	                    weight = EXCLUDED.weight,
+	                    lr_no = EXCLUDED.lr_no,
+	                    remark = EXCLUDED.remark,
+	                    status = EXCLUDED.status,
+	                    delivery_date = EXCLUDED.delivery_date
+	                ;
+	                    INSERT INTO lr_records
+	                    (lr_id, invoice_number, receive_date, time, brand, party_name,
+	                     location, boxes, transporter, transit_time, eway_bill, pin_code,
+	                     amount, weight, lr_no, remark, status, delivery_date)
+	                    VALUES ('BC2505120005', '7086275762', '2025-04-23'::date, '14:00:00'::time, 'abcd', 'CAPITAL MEDICAL AGENCIES', 'BHOPAL', 1, 'BONEYCARGO', '2025-04-25'::date, '251948285257', 462001, 10886, '11KG', '', '', '', 'NaT'::timestamp)
+	                    ON CONFLICT (invoice_number) DO UPDATE SET
+	                    receive_date = EXCLUDED.receive_date,
+	                    time = EXCLUDED.time,
+	                    brand = EXCLUDED.brand,
+	                    party_name = EXCLUDED.party_name,
+	                    location = EXCLUDED.location,
+	                    boxes = EXCLUDED.boxes,
+	                    transporter = EXCLUDED.transporter,
+	                    transit_time = EXCLUDED.transit_time,
+	                    eway_bill = EXCLUDED.eway_bill,
+	                    pin_code = EXCLUDED.pin_code,
+	                    amount = EXCLUDED.amount,
+	                    weight = EXCLUDED.weight,
+	                    lr_no = EXCLUDED.lr_no,
+	                    remark = EXCLUDED.remark,
+	                    status = EXCLUDED.status,
+	                    delivery_date = EXCLUDED.delivery_date
+	                ;
+	                    INSERT INTO lr_records
+	                    (lr_id, invoice_number, receive_date, time, brand, party_name,
+	                     location, boxes, transporter, transit_time, eway_bill, pin_code,
+	                     amount, weight, lr_no, remark, status, delivery_date)
+	                    VALUES ('BC2505120006', '7086275761', '2025-04-23'::date, '14:00:00'::time, 'abcd', 'DRUG HOUSE', 'BHOPAL', 2, 'BONEYCARGO', '2025-04-25'::date, '241948284983', 462001, 9822, '13KG', '', '', '', 'NaT'::timestamp)
+	                    ON CONFLICT (invoice_number) DO UPDATE SET
+	                    receive_date = EXCLUDED.receive_date,
+	                    time = EXCLUDED.time,
+	                    brand = EXCLUDED.brand,
+	                    party_name = EXCLUDED.party_name,
+	                    location = EXCLUDED.location,
+	                    boxes = EXCLUDED.boxes,
+	                    transporter = EXCLUDED.transporter,
+	                    transit_time = EXCLUDED.transit_time,
+	                    eway_bill = EXCLUDED.eway_bill,
+	                    pin_code = EXCLUDED.pin_code,
+	                    amount = EXCLUDED.amount,
+	                    weight = EXCLUDED.weight,
+	                    lr_no = EXCLUDED.lr_no,
+	                    remark = EXCLUDED.remark,
+	                    status = EXCLUDED.status,
+	                    delivery_date = EXCLUDED.delivery_date
+	                ;
+	                    INSERT INTO lr_records
+	                    (lr_id, invoice_number, receive_date, time, brand, party_name,
+	                     location, boxes, transporter, transit_time, eway_bill, pin_code,
+	                     amount, weight, lr_no, remark, status, delivery_date)
+	                    VALUES ('BC2505120007', '7086275753', '2025-04-23'::date, '14:00:00'::time, 'abcd', 'YOGESH AGENCIES', 'CHHINDWARA', 1, 'BONEYCARGO', '2025-04-25'::date, '261948284806', 480001, 6447, '3KG', '', '', '', 'NaT'::timestamp)
+	                    ON CONFLICT (invoice_number) DO UPDATE SET
+	                    receive_date = EXCLUDED.receive_date,
+	                    time = EXCLUDED.time,
+	                    brand = EXCLUDED.brand,
+	                    party_name = EXCLUDED.party_name,
+	                    location = EXCLUDED.location,
+	                    boxes = EXCLUDED.boxes,
+	                    transporter = EXCLUDED.transporter,
+	                    transit_time = EXCLUDED.transit_time,
+	                    eway_bill = EXCLUDED.eway_bill,
+	                    pin_code = EXCLUDED.pin_code,
+	                    amount = EXCLUDED.amount,
+	                    weight = EXCLUDED.weight,
+	                    lr_no = EXCLUDED.lr_no,
+	                    remark = EXCLUDED.remark,
+	                    status = EXCLUDED.status,
+	                    delivery_date = EXCLUDED.delivery_date
+	                ;
+	                    INSERT INTO lr_records
+	                    (lr_id, invoice_number, receive_date, time, brand, party_name,
+	                     location, boxes, transporter, transit_time, eway_bill, pin_code,
+	                     amount, weight, lr_no, remark, status, delivery_date)
+	                    VALUES ('BC2505120008', '7086275752', '2025-04-23'::date, '14:00:00'::time, 'abcd', 'G M MEDICAL AGENCIES', 'CHHINDWARA', 1, 'BONEYCARGO', '2025-04-25'::date, '211948284786', 480001, 2450, '3KG', '', '', '', 'NaT'::timestamp)
+	                    ON CONFLICT (invoice_number) DO UPDATE SET
+	                    receive_date = EXCLUDED.receive_date,
+	                    time = EXCLUDED.time,
+	                    brand = EXCLUDED.brand,
+	                    party_name = EXCLUDED.party_name,
+	                    location = EXCLUDED.location,
+	                    boxes = EXCLUDED.boxes,
+	                    transporter = EXCLUDED.transporter,
+	                    transit_time = EXCLUDED.transit_time,
+	                    eway_bill = EXCLUDED.eway_bill,
+	                    pin_code = EXCLUDED.pin_code,
+	                    amount = EXCLUDED.amount,
+	                    weight = EXCLUDED.weight,
+	                    lr_no = EXCLUDED.lr_no,
+	                    remark = EXCLUDED.remark,
+	                    status = EXCLUDED.status,
+	                    delivery_date = EXCLUDED.delivery_date
+	                ;
+	                    INSERT INTO lr_records
+	                    (lr_id, invoice_number, receive_date, time, brand, party_name,
+	                     location, boxes, transporter, transit_time, eway_bill, pin_code,
+	                     amount, weight, lr_no, remark, status, delivery_date)
+	                    VALUES ('BC2505120009', '7086275749', '2025-04-23'::date, '14:00:00'::time, 'abcd', 'RAMACHEM', 'DAMOH', 1, 'BONEYCARGO', '2025-04-25'::date, '261948282248', 470661, 3197, '6KG', '', '', '', 'NaT'::timestamp)
+	                    ON CONFLICT (invoice_number) DO UPDATE SET
+	                    receive_date = EXCLUDED.receive_date,
+	                    time = EXCLUDED.time,
+	                    brand = EXCLUDED.brand,
+	                    party_name = EXCLUDED.party_name,
+	                    location = EXCLUDED.location,
+	                    boxes = EXCLUDED.boxes,
+	                    transporter = EXCLUDED.transporter,
+	                    transit_time = EXCLUDED.transit_time,
+	                    eway_bill = EXCLUDED.eway_bill,
+	                    pin_code = EXCLUDED.pin_code,
+	                    amount = EXCLUDED.amount,
+	                    weight = EXCLUDED.weight,
+	                    lr_no = EXCLUDED.lr_no,
+	                    remark = EXCLUDED.remark,
+	                    status = EXCLUDED.status,
+	                    delivery_date = EXCLUDED.delivery_date
+	                
+2025-05-12 17:46:15.041 IST [10692] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:46:15.066 IST [19740] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:46:15.090 IST [1384] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:46:15.111 IST [11768] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:46:20.039 IST [9808] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:46:20.065 IST [4620] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:46:20.089 IST [7868] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:46:20.111 IST [20316] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:46:25.030 IST [17548] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:46:25.048 IST [11504] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:46:25.071 IST [11004] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:46:25.096 IST [15908] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:46:30.043 IST [4680] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:46:30.076 IST [8664] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:46:30.120 IST [9800] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:46:30.156 IST [4048] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:46:30.612 IST [448] LOG:  checkpoint complete: wrote 1015 buffers (6.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=109.869 s, sync=0.223 s, total=110.111 s; sync files=315, longest=0.017 s, average=0.001 s; distance=4847 kB, estimate=4847 kB; lsn=0/1A29070, redo lsn=0/1A28FE0
+2025-05-12 17:46:35.156 IST [10568] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:46:35.178 IST [13684] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:46:35.201 IST [16604] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:46:35.221 IST [19992] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:47:21.044 IST [2572] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:47:21.066 IST [16544] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:47:21.089 IST [17768] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:47:21.117 IST [14264] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:48:21.049 IST [19896] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:48:21.069 IST [20396] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:48:21.089 IST [20052] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:48:21.109 IST [19692] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:49:21.049 IST [20248] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:49:21.070 IST [3240] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:49:21.093 IST [19704] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:49:21.112 IST [16792] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:49:40.630 IST [448] LOG:  checkpoint starting: time
+2025-05-12 17:49:41.764 IST [448] LOG:  checkpoint complete: wrote 11 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.108 s, sync=0.020 s, total=1.135 s; sync files=7, longest=0.013 s, average=0.003 s; distance=4 kB, estimate=4362 kB; lsn=0/1A2A080, redo lsn=0/1A2A028
+2025-05-12 17:50:22.611 IST [3036] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:50:22.632 IST [18720] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:50:22.654 IST [14216] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:50:22.675 IST [5484] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:51:21.037 IST [6296] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:51:21.057 IST [12388] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:51:21.080 IST [4412] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:51:21.099 IST [19664] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:52:21.046 IST [3016] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:52:21.066 IST [8508] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:52:21.088 IST [19228] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:52:21.108 IST [18760] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:53:21.062 IST [3168] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:53:21.085 IST [19684] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:53:21.106 IST [5204] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:53:21.125 IST [20364] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:54:21.047 IST [21236] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:54:21.069 IST [1620] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:54:21.092 IST [13760] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:54:21.113 IST [13160] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:55:21.046 IST [5356] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:55:21.067 IST [16656] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:55:21.089 IST [20908] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:55:21.109 IST [9104] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:56:21.042 IST [17288] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:56:21.063 IST [7324] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:56:21.086 IST [12116] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:56:21.106 IST [15348] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:57:21.056 IST [16500] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:57:21.074 IST [3472] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:57:21.096 IST [16712] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:57:21.116 IST [18276] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:58:21.036 IST [2252] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:58:21.056 IST [20832] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:58:21.078 IST [4120] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:58:21.106 IST [6076] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:59:21.040 IST [1020] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:59:21.061 IST [4028] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:59:21.082 IST [21140] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 17:59:21.103 IST [11480] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 18:00:21.074 IST [4980] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 18:00:21.103 IST [19648] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 18:00:21.125 IST [14984] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 18:00:21.144 IST [21408] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 18:00:58.408 IST [21108] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 18:00:58.442 IST [20684] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 18:00:58.467 IST [6296] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 18:00:58.487 IST [12080] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 18:00:59.110 IST [3624] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 18:00:59.134 IST [9384] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 18:00:59.166 IST [8128] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 18:00:59.188 IST [19364] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 18:01:04.096 IST [20816] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 18:01:04.117 IST [18992] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 18:01:04.137 IST [18604] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 18:01:04.161 IST [19228] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 18:01:07.467 IST [20108] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 18:01:07.496 IST [19408] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 18:01:07.522 IST [20788] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 18:01:07.545 IST [20644] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 18:01:09.098 IST [9340] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 18:01:09.121 IST [15476] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 18:01:09.147 IST [17572] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 18:01:09.167 IST [19484] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 18:01:14.092 IST [19128] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 18:01:14.113 IST [15752] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 18:01:14.135 IST [12844] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 18:01:14.156 IST [2196] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 18:01:19.115 IST [20880] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 18:01:19.141 IST [1424] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 18:01:19.164 IST [19880] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 18:01:19.185 IST [20192] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 18:01:24.098 IST [6128] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 18:01:24.117 IST [21460] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 18:01:24.139 IST [19756] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 18:01:24.160 IST [20288] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 18:02:00.750 IST [14456] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 18:02:00.774 IST [16220] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 18:04:40.801 IST [448] LOG:  checkpoint starting: time
+2025-05-12 18:04:40.944 IST [448] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.106 s, sync=0.013 s, total=0.144 s; sync files=2, longest=0.010 s, average=0.007 s; distance=3 kB, estimate=3927 kB; lsn=0/1A2ACE0, redo lsn=0/1A2AC88
+2025-05-12 19:36:46.570 IST [468] FATAL:  role "wardrobe_user" does not exist
+2025-05-12 19:36:46.592 IST [21832] FATAL:  role "wardrobe_user" does not exist

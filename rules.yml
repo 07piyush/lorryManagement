@@ -1,14 +1,11 @@
 validation_rules:
   # Fields required for PDF generation
   pdf_fields:
-    - invoice_number
     - receive_date
     - party_name
     - location
     - boxes
-    - weight
     - transporter
-    - eway_bill
 
   field_types:
     invoice_number: str
@@ -31,39 +28,89 @@ validation_rules:
 
   # Excel column to database field mapping
   column_mapping:
-    INVOICE  NO: invoice_number
-    RECEIVE DATE: receive_date
-    TIME: time
-    BRAND: brand
-    '                PARTY NAME': party_name
-    '        LOCATION': location
-    'BOX   ': boxes
-    TRANSPORTER: transporter
-    TRANSICT TIME: transit_time
-    'E-WAYBILL ': eway_bill
-    'PIN CODE': pin_code
-    AMT: amount
-    KG: weight
-    'TRNS LR NO.': lr_no
-    REMARK: remark
-    STATUS: status
-    'DELIVERY DATE': delivery_date
+    "INVOICE NO": invoice_number
+    "RECEIVE DATE": receive_date
+    "TIME": time
+    "BRAND": brand
+    "PARTY NAME": party_name
+    "LOCATION": location
+    "BOX": boxes
+    "TRANSPORTER": transporter
+    "TRANSIT TIME": transit_time
+    "E-WAYBILL": eway_bill
+    "PIN CODE": pin_code
+    "AMT": amount
+    "KG": weight
+    "TRNS LR NO": lr_no
+    "REMARK": remark
+    "STATUS": status
+    "DELIVERY DATE": delivery_date
 
   # Fields to show on PDF
   pdf_mapping:
-    invoice_number: INVOICE  NO
-    receive_date: RECEIVE DATE
-    party_name: '                PARTY NAME'
-    location: '        LOCATION'
-    boxes: 'BOX   '
-    weight: KG
-    transporter: TRANSPORTER
-    eway_bill: 'E-WAYBILL '
+    invoice_number: "INVOICE NO"
+    receive_date: "RECEIVE DATE"
+    party_name: "PARTY NAME"
+    location: "LOCATION"
+    boxes: "BOX"
+    weight: "KG"
+    transporter: "TRANSPORTER"
+    eway_bill: "E-WAYBILL"
 
 lr_generation:
   items_per_page: 3
   id_pattern: "{branch_code}{YYMMDD}{sequence:04d}"
   sequence_reset: daily
+  company_name: "BONEY CARGO MOVERS"
+  pdf_format:
+    page_size: A4
+    margins:
+      top: 0.5
+      bottom: 0.5
+      left: 0.5
+      right: 0.5
+    fonts:
+      brand:
+        name: Helvetica-Bold
+        size: 14
+      header:
+        name: Helvetica-Bold
+        size: 12
+      body:
+        name: Helvetica
+        size: 10
+    sections:
+      - type: brand
+        text: "{company_name}"
+        align: center
+      - type: header
+        fields:
+          - name: lr_id
+            label: "LR No:"
+            width: 4
+          - name: receive_date
+            label: "Date:"
+            width: 4
+      - type: body
+        box: true
+        fields:
+          - name: party_name
+            label: "Party Name:"
+            width: 8
+          - name: location
+            label: "Location:"
+            width: 8
+          - name: boxes
+            label: "Boxes:"
+            width: 3
+          - name: transporter
+            label: "Transporter:"
+            width: 5
+      - type: footer
+        fields:
+          - name: remark
+            label: "Remarks:"
+            width: 8
 
 database:
   table_name: shipment_records
@@ -82,3 +129,16 @@ print_settings:
   printer_name: "Microsoft Print to PDF"  # Default to PDF if no printer
   copies: 1
   timeout_seconds: 30
+
+processing:
+  excel_chunk_size: 1000      # Number of rows to read at once
+  db_batch_size: 100          # Number of records per database batch
+  pdf_batch_size: 30          # Number of LRs per PDF batch
+  max_workers: 4              # Number of parallel workers
+  checkpoint_interval: 1000    # Save checkpoint every N records
+
+monitoring:
+  log_file: "logs/lr_generator.log"
+  log_level: "INFO"
+  metrics_enabled: true
+  performance_tracking: true

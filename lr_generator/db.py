@@ -2,6 +2,8 @@
 import psycopg2
 from typing import List, Dict
 from psycopg2.extras import execute_batch
+from datetime import date, time
+import pandas as pd
 
 class Database:
     def __init__(self, connection_params: Dict[str, str], table_name: str):
@@ -45,6 +47,14 @@ class Database:
                 """)
                 conn.commit()
 
+    def _clean_value(self, value):
+        """Clean value for database insertion."""
+        if pd.isna(value) or value == '':
+            return None
+        if isinstance(value, (date, time)):
+            return value
+        return str(value)
+
     def insert_records(self, records: List[Dict], batch_size: int = 100):
         """Insert multiple records into the database."""
         with self.connect() as conn:
@@ -76,24 +86,24 @@ class Database:
                 
                 values = [
                     (
-                        record['lr_id'],
-                        record['invoice_number'],
-                        record['receive_date'],
-                        record.get('time'),
-                        record.get('brand'),
-                        record['party_name'],
-                        record['location'],
-                        record['boxes'],
-                        record['transporter'],
-                        record.get('transit_time'),
-                        record.get('eway_bill'),
-                        record.get('pin_code'),
-                        record.get('amount'),
-                        record['weight'],
-                        record.get('lr_no'),
-                        record.get('remark'),
-                        record.get('status'),
-                        record.get('delivery_date')
+                        self._clean_value(record['lr_id']),
+                        self._clean_value(record['invoice_number']),
+                        self._clean_value(record['receive_date']),
+                        self._clean_value(record.get('time')),
+                        self._clean_value(record.get('brand')),
+                        self._clean_value(record['party_name']),
+                        self._clean_value(record['location']),
+                        self._clean_value(record['boxes']),
+                        self._clean_value(record['transporter']),
+                        self._clean_value(record.get('transit_time')),
+                        self._clean_value(record.get('eway_bill')),
+                        self._clean_value(record.get('pin_code')),
+                        self._clean_value(record.get('amount')),
+                        self._clean_value(record['weight']),
+                        self._clean_value(record.get('lr_no')),
+                        self._clean_value(record.get('remark')),
+                        self._clean_value(record.get('status')),
+                        self._clean_value(record.get('delivery_date'))
                     )
                     for record in records
                 ]
@@ -103,5 +113,6 @@ class Database:
 
     def close(self):
         """Close the database connection."""
-        if self._connection and not self._connection.closed:
+        if self._connection:
             self._connection.close()
+            self._connection = None

@@ -8,3 +8,7 @@ click>=8.0.0
 PyYAML>=6.0.0
 python-dotenv>=1.0.0
 pywin32>=306; sys_platform == 'win32'  # For Windows printing
+structlog>=24.1.0
+tqdm>=4.66.0
+colorama>=0.4.6
+rich>=13.7.0
